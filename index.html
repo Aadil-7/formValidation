@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>CardDetail</title>
+</head>
+
+<body>
+    <div class="right">
+        <div class="samFront">
+            <span class="filled"></span>
+            <span class="empty"></span>
+            <p class="samCardNum">0000 0000 0000 0000</p>
+            <p class="samCardName">Will Smith</p>
+            <p class="samCardExpiry">
+               <span class="expMM" >00</span>/ <span class="expYY" >00</span></p>
+        </div>
+        <div class="samBack">
+            <p class="samCardcvv">000</p>
+        </div>
+    </div>
+    <div class="left">
+        <form class="formBody" id="myForm">
+            <div class="nameNum">
+                <div class="nameField">
+                    <p>cardholder name</p>
+                    <input type="text" id="cardName">
+                    <small id="nameErr"></small>
+                </div>
+                <div class="numberField">
+                    <p>card number</p>
+                    <input type="text" id="cardNumber">
+                    <small id="numErr"></small>
+                </div>
+            </div>
+            <div class="cardDetails">
+                <div class="expiry">
+                    <p>exp. date(MM/YY)</p>
+                    <input type="text" id="inpt-mm">
+                    <input type="text" id="inpt-yy">
+                </div>
+                <div class="cvv">
+                    <p>cvv</p>
+                    <input type="text" id="inpt-cvv">
+                </div>
+            </div>
+            <div class="detailsErr">
+                <small id="mmErr"></small>
+                <small id="yyErr"></small>
+                <small id="cvvErr"></small>
+            </div>
+            <button type="submit" id="submit-btn">Confirm</button>
+            <span id="mandatory"></span>
+        </form>
+        <div class="confirmed displaynone" id="confi">
+            <img src="../images/icon-complete.svg" alt="">
+                <h1>thank you!</h1>
+            <p>We've added your card details</p>
+            <button>Continue</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
